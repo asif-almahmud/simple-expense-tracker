@@ -1,0 +1,60 @@
+@import "../../../globalVariables.module.scss";
+
+.add_transactions_container {
+  width: 36%;
+  background-color: #18221c;
+  color: #67c78d;
+}
+
+.wrapper {
+  padding: 30px;
+  height: -moz-calc(100% - 60px);
+  height: -webkit-calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+
+.add_transactions_header {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.add_transactions_types {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.transactions_type {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.transactions_type:hover {
+  border-bottom: 1px solid $tertiaryColor;
+}
+
+.transactions_type_active {
+  border-bottom: 1px solid $tertiaryColor;
+}
+
+@media only screen and (max-width: 720px) {
+  .add_transactions_container {
+    width: 100%;
+  }
+  .wrapper {
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-height: 720px) {
+  .add_transactions_container {
+    width: 100%;
+  }
+
+  .wrapper {
+    padding-bottom: 80px;
+  }
+}
