@@ -1,0 +1,14 @@
+.history_table {
+  width: 100%;
+}
+
+.undo_transaction {
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 8px;
+  &:hover > span {
+    color: #ffcb6b;
+    border-bottom: 1px solid #ffa500;
+  }
+}
