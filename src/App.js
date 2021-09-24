@@ -17,7 +17,7 @@ const {
 
 const App = () => {
   const [appHavePassword, setAppHavePassword] = useState(true);
-  const [correctPassordProvided, setCorrectPasswordProvided] = useState(false);
+  const [correctPasswordProvided, setCorrectPasswordProvided] = useState(false);
 
   const appData = useSelector((state) => state);
   localStorage.setItem("appData", JSON.stringify(appData));
@@ -38,7 +38,7 @@ const App = () => {
     return () => localStorage.setItem("appData", JSON.stringify(appData));
   }, []);
 
-  if (appHavePassword && correctPassordProvided === false)
+  if (appData.password && appHavePassword && correctPasswordProvided === false)
     return (
       <EnterPassword
         appPassword={appData.password}
