@@ -126,13 +126,13 @@ const Header = () => {
         {/* Reset Password Modal */}
         {showModal && showModalResetPassword && (
           <div className={modal_common}>
-            <h2 className={modal_header}>
+            {/* <h2 className={modal_header}>
               Wait ! After this action anyone can enter this app without
               password
-            </h2>
-            <p className={modal_body}>
+            </h2> */}
+            <h2 className={modal_header}>
               Are you sure You want to reset password?
-            </p>
+            </h2>
             <div className={modal_footer}>
               <span onClick={() => setShowModal(false)}>Cancel</span>
               <span
@@ -157,12 +157,12 @@ const Header = () => {
         {/* Reset History Modal */}
         {showModal && showModalResetHistory && (
           <div className={modal_common}>
-            <h2 className={modal_header}>
+            {/* <h2 className={modal_header}>
               Wait ! This action will delete all the history
-            </h2>
-            <p className={modal_body}>
+            </h2> */}
+            <h2 className={modal_header}>
               Are you sure You want to delete all the history?
-            </p>
+            </h2>
             <div className={modal_footer}>
               <span onClick={() => setShowModal(false)}>Cancel</span>
               <span
@@ -180,12 +180,12 @@ const Header = () => {
         {/* Reset App Modal */}
         {showModal && showModalResetApp && (
           <div className={modal_common}>
-            <h2 className={modal_header}>
+            {/* <h2 className={modal_header}>
               Wait ! This action will reset your password and all other app data
-            </h2>
-            <p className={modal_body}>
+            </h2> */}
+            <h2 className={modal_header}>
               Are you sure You want to delete all the app data?
-            </p>
+            </h2>
             <div className={modal_footer}>
               <span onClick={() => setShowModal(false)}>Cancel</span>
               <span
